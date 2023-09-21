@@ -19,6 +19,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: o;
   overflow-x: hidden;
   -webkit-user-select: none;
   user-select: none;
@@ -26,12 +28,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1,
-h2,
-span,
-a {
-  color: $color-quaternary;
-}
+// h1,
+// h2,
+// span,
+// a {
+//   color: $color-quaternary;
+// }
 
 
 
@@ -126,12 +128,19 @@ svg {
 //   background: #f1f1f1;
 // }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: $color-primary;
-    color: $color-quaternary;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     background-color: $color-primary;
+//     color: $color-quaternary;
+//     height: 100vh;
+//   }
+// }
+// @media (prefers-color-scheme: light) {
+//   body {
+//     background-color: #FAF6F2;
+//     color: $color-quaternary;
+//   }
+// }
 
 .rounded-100 {
   border-radius: 100%
