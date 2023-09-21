@@ -12,7 +12,7 @@ const Header = () => {
   const changeTo = router.locale === "es" ? "en" : "es";
 
   return (
-    <div className='md:w-11/12 md:mx-auto md:py-3 border-b border-b-[#ffebd6]'>
+    <div className='md:w-11/12 md:mx-auto md:py-3 header'>
       <div className='md:flex hidden justify-between items-center'>
         <div className='flex flex-row gap-1 items-center'>
           <div className='flex rounded-full h-fit w-fit'>
@@ -27,27 +27,10 @@ const Header = () => {
           </div>
         </div>
         <div className='flex gap-4 capitalize'>
-          <Link
-            className='hover:border-b border-b-[#BA8B64]'
-            href={"#about-us"}
-          >
-            about us
-          </Link>
-          <Link
-            className='hover:border-b border-b-[#BA8B64]'
-            href={"#producs-and-services"}
-          >
-            products and Services
-          </Link>
-          <Link
-            className='hover:border-b border-b-[#BA8B64]'
-            href={"#locations"}
-          >
-            locations
-          </Link>
-          <Link className='hover:border-b border-b-[#BA8B64]' href={"#videos"}>
-            videos
-          </Link>
+          <Link href={"#about-us"}>about us</Link>
+          <Link href={"#producs-and-services"}>products and Services</Link>
+          <Link href={"#locations"}>locations</Link>
+          <Link href={"#videos"}>videos</Link>
           <DarkMode />
         </div>
       </div>
