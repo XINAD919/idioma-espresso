@@ -12,6 +12,12 @@ const StyledApp = styled.div`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.color};
   transition: all 0.25s ease;
+  a:hover {
+    border-bottom: 1px solid ${(props) => props.theme.linkBorder};
+  }
+  .header {
+    border-bottom: 1px solid ${(props) => props.theme.border};
+  }
 `;
 
 const lightTheme = {
@@ -19,13 +25,16 @@ const lightTheme = {
   backgroundColor: "#FAF6F2",
   color: "#BA8B64",
   icon: "#000",
+  linkBorder: "#BA8B64",
+  border: "#ffebd6"
 };
 const darkTheme = {
-  body: "#0e0e10",
-  backgroundColor: "#0e0e10",
-  color: "#BBE1FA",
+  body: "#1D0027",
+  backgroundColor: "#1D0027",
+  color: "#B155A8",
   icon: "#BBE1FA",
-  border: "#BBE1FA",
+  linkBorder: "#3DD8FC",
+  border:"#2E003E"
 };
 
 const PublicLayout: FC<LayoutProps> = ({ children }) => {
