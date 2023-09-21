@@ -11,7 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <PublicLayout>
-        <div className='h-screen'>
+        <div className='h-full'>
           <section className='' id='home'></section>
           <section className='' id='about-us'>
             <h2 className='mb-8'>About Us</h2>
