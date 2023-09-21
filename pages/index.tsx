@@ -23,7 +23,7 @@ export default function Home() {
             <h2 className='mb-8'>Locations</h2>
           </section>
           <section
-            className=' h-screen flex flex-col justify-center items-center'
+            className=' h-full flex flex-col justify-center items-center'
             id='videos'
           >
             <h2 className='mb-8'>Videos</h2>
