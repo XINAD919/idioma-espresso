@@ -1,9 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { useTheme } from "styled-components";
-import { ThemeContext } from "../../context/ThemeContext";
 
 const Hamburger = ({ onClick }) => {
-  const theme = useTheme();
 
   return (
     <svg
@@ -17,7 +14,7 @@ const Hamburger = ({ onClick }) => {
     >
       <path
         d='M5 17H19M5 12H19M5 7H19'
-        stroke={theme.icon}
+        stroke={"#3C1F1C"}
         strokeWidth='2'
         strokeLinecap='round'
         strokeLinejoin='round'
