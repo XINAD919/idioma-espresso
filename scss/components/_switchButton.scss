@@ -35,7 +35,7 @@
     }
   }
   input:checked + .slider{
-    background-color: $color-secondary;
+    background-color: #fff;
    &::before{
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);

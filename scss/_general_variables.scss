@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-$color-primary: #0e0e10;
-$color-secondary: #0F4C75;
-$color-tertiary: #3282B8;
-$color-quaternary: #574840;
+$color-body: #FAF6F2;
+$color-text: #BA8B64;
+$color-links: #BA8B64;
+$color-header: #ffebd6;
+$color-titles: #3C1F1C;
 
 * {
   box-sizing: border-box;
@@ -25,15 +27,31 @@ body {
   -webkit-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $color-body;
 }
 
-// h1,
-// h2,
-// span,
-// a {
-//   color: $color-quaternary;
-// }
+h1,
+h2,
+h3,
+a,
+p, span{
+  color: $color-titles
+}
+
+.link__group {
+  a {
+    font-weight: 600;
+
+    &:hover {
+      border-bottom: 1px solid $color-links;
+    }
+  }
+}
+
+.header {
+  border-bottom: 1px solid $color-links;
+}
 
 .icon {
   background-color: #3C1F1C;
@@ -45,20 +63,6 @@ body {
 }
 
 
-
-
-.links__container {
-  background-image: url('../public/footer-desktop.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-
-
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -68,65 +72,12 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
 }
-
-.bg-primary {
-  background-color: $color-primary;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.bg-secondary {
-  background-color: $color-secondary;
-}
 
-.bg-tertiary {
-  background-color: $color-tertiary;
-}
-
-.bg-quaternary {
-  background-color: $color-quaternary;
-}
-
-.text-primary {
-  color: $color-primary;
-}
-
-.text-secondary {
-  color: $color-secondary;
-}
-
-.text-tertiary {
-  color: $color-tertiary;
-}
-
-.text-quaternary {
-  color: $color-quaternary;
-}
-
-.border-button {
-  border: 1px solid $color-quaternary;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background-color: $color-quaternary;
-    color: $color-primary;
-
-    img {
-      filter: invert(1) sepia(1) saturate(1) hue-rotate(180deg);
-    }
-  }
-}
-
-.nav-links {
-  .nav-item {
-    border-bottom: 0px transparent solid;
-    transition: border-bottom .20s ease;
-
-    &:hover {
-      border-bottom: 1px $color-quaternary solid;
-    }
-  }
-}
 
 svg {
   transition: stroke .20s ease;
@@ -150,19 +101,6 @@ svg {
 //   background: #f1f1f1;
 // }
 
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background-color: $color-primary;
-//     color: $color-quaternary;
-//     height: 100vh;
-//   }
-// }
-// @media (prefers-color-scheme: light) {
-//   body {
-//     background-color: #FAF6F2;
-//     color: $color-quaternary;
-//   }
-// }
 
 .rounded-100 {
   border-radius: 100%

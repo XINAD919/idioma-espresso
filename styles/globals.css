@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +19,27 @@ body {
   -webkit-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FAF6F2;
+}
+
+h1,
+h2,
+h3,
+a,
+p, span {
+  color: #3C1F1C;
+}
+
+.link__group a {
+  font-weight: 600;
+}
+.link__group a:hover {
+  border-bottom: 1px solid #BA8B64;
+}
+
+.header {
+  border-bottom: 1px solid #BA8B64;
 }
 
 .icon {
@@ -27,16 +48,6 @@ body {
 .icon:hover {
   --tw-text-opacity: 1;
   color: rgb(60 31 28/var(--tw-text-opacity));
-}
-
-.links__container {
-  background-image: url("../public/footer-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 h1 {
@@ -49,58 +60,9 @@ h2 {
   font-weight: 700;
 }
 
-.bg-primary {
-  background-color: #0e0e10;
-}
-
-.bg-secondary {
-  background-color: #0F4C75;
-}
-
-.bg-tertiary {
-  background-color: #3282B8;
-}
-
-.bg-quaternary {
-  background-color: #574840;
-}
-
-.text-primary {
-  color: #0e0e10;
-}
-
-.text-secondary {
-  color: #0F4C75;
-}
-
-.text-tertiary {
-  color: #3282B8;
-}
-
-.text-quaternary {
-  color: #574840;
-}
-
-.border-button {
-  border: 1px solid #574840;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease-in-out;
-}
-.border-button:hover {
-  background-color: #574840;
-  color: #0e0e10;
-}
-.border-button:hover img {
-  filter: invert(1) sepia(1) saturate(1) hue-rotate(180deg);
-}
-
-.nav-links .nav-item {
-  border-bottom: 0px transparent solid;
-  transition: border-bottom 0.2s ease;
-}
-.nav-links .nav-item:hover {
-  border-bottom: 1px #574840 solid;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 svg {
@@ -225,7 +187,7 @@ svg path {
   transition: 0.4s;
 }
 .switch-button input:checked + .slider {
-  background-color: #0F4C75;
+  background-color: #fff;
 }
 .switch-button input:checked + .slider::before {
   -webkit-transform: translateX(26px);
