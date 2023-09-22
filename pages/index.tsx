@@ -16,12 +16,11 @@ export default function Home() {
           <section className='' id='home'>
             <div className='w-full'>
               <Image
-                src={"/welcome-idioma.png"}
+                src={"/welcome.png"}
                 alt='Welcome to Idioma Espresso'
                 width={"1000"}
                 height={"1000"}
                 style={{ width: "100%" }}
-                priority
               />
             </div>
           </section>
