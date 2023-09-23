@@ -25,7 +25,7 @@ const Header = () => {
           <Link href={"#about-us"}>about us</Link>
           <Link href={"#producs-and-services"}>products and Services</Link>
           <Link href={"#locations"}>locations</Link>
-          <Link href={"#locations"}>how we&apos;re diferent</Link>
+          <Link href={"#differentiation"}>how we&apos;re diferent</Link>
           <Link href={"#videos"}>videos</Link>
         </div>
       </div>
@@ -72,7 +72,7 @@ const HeaderMovile = () => {
           <Link className='w-fit' href={"#locations"}>
             locations
           </Link>
-          <Link href={"#locations"}>how we&apos;re diferent</Link>
+          <Link href={"#differentiation"}>how we&apos;re diferent</Link>
           <Link className='w-fit' href={"#videos"}>
             videos
           </Link>
