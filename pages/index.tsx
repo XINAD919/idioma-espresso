@@ -110,7 +110,7 @@ export default function Home() {
                     style={{ width: "70%" }}
                   />
                 </div>
-                <div className='text-xl px-4 py-2 rounded-md  md:col-span-1 col-span-2 '>
+                <div className='text-xl px-4 py-2 rounded-md  md:col-span-1 col-span-2 md:text-2xl '>
                   <span>
                     in addition to our product services and delicious meals and
                     drinks we offer quite interesting activities and services
