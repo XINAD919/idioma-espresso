@@ -115,14 +115,7 @@ export default function Home() {
                     in addition to our product services and delicious meals and
                     drinks we offer quite interesting activities and services
                     for all our customers such as paint, crochet, dance lessons
-                    from every part of the world and karaoke night. it should be
-                    noted that in the only thing that would be invested a small
-                    amount of serious money for the inscription of painting and
-                    crochet because we bought preciously the materials for
-                    people who are and neither that we need nor that over and
-                    the only thing that we request in addition that is that they
-                    could have consumed some product of our cafeteria rest all
-                    this completely at your disposal.
+                    from every part of the world and karaoke night.
                   </span>
                 </div>
               </div>
