@@ -18,7 +18,7 @@ export default function Home() {
               <Image
                 src={"/welcome.png"}
                 alt='Welcome to Idioma Espresso'
-                width={"1000"}
+                width={"2080"}
                 height={"1000"}
                 style={{ width: "100%" }}
               />

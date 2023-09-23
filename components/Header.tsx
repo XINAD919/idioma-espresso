@@ -44,7 +44,7 @@ const HeaderMovile = () => {
     <div className='md:hidden sm:flex mx-2 w-11/12'>
       <div className='flex justify-between  items-center w-full min-w-fit '>
         <div className='flex rounded-full h-12 w-12'>
-          <Link href='/' className='flex items-center gap-2'>
+          <Link href='#home' className='flex items-center gap-2'>
             <Image
               src='/idioma-espresso.png'
               alt='logo idioma espresso'
