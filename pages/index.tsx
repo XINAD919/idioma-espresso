@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
                 <div className='text-xl px-4 py-2 rounded-md  md:col-span-1 col-span-2 md:text-2xl '>
                   <span>
-                    in addition to our product services and delicious meals and
+                    In addition to our product services and delicious meals and
                     drinks we offer quite interesting activities and services
                     for all our customers such as paint, crochet, dance lessons
                     from every part of the world and karaoke night.
