@@ -42,15 +42,18 @@ export default function Home() {
               </span>
             </div>
             <div className=''>
-              <h3 className="text-center">logo and slogan</h3>
+              <h3 className='text-center'>logo and slogan</h3>
               <div className='flex flex-col justify-center items-center'>
                 <Image
                   src={"/logo.png"}
                   alt='logo idioma espresso'
                   width='200'
                   height='200'
+                  className='m-auto'
                 />
-                <p className="text-xl md:text-2xl font-semibold">Where Learning and Fun Brew Together!</p>
+                <p className='text-xl md:text-2xl font-semibold'>
+                  Where Learning and Fun Brew Together!
+                </p>
               </div>
             </div>
           </section>
@@ -76,7 +79,7 @@ export default function Home() {
                     like reading, writing etc.
                   </span>
                 </div>
-                <div className='md:text-2xl text-xl px-4 py-2 rounded-md '>
+                <div className='md:text-2xl text-xl px-4 py-2 rounded-md md:col-span-1 col-span-2'>
                   <span>
                     In the course of the day begins the change of menu where now
                     is no longer a place for all kinds of people, and our menus
@@ -84,7 +87,7 @@ export default function Home() {
                     hamburgers dogs etc.
                   </span>
                 </div>
-                <div className=''>
+                <div className=' md:col-span-1 col-span-2'>
                   <Image
                     src={"/menu-noche.png"}
                     alt={"nigth time menu"}
@@ -98,7 +101,7 @@ export default function Home() {
             <div className='mt-4'>
               <h3 className='text-center my-8'>Services</h3>
               <div className=' grid grid-cols-2 gap-4 place-items-center '>
-                <div className='flex items-center justify-center'>
+                <div className='flex items-center justify-center  md:col-span-1 col-span-2'>
                   <Image
                     src={"/notice.png"}
                     alt='notice'
@@ -107,7 +110,7 @@ export default function Home() {
                     style={{ width: "70%" }}
                   />
                 </div>
-                <div className='text-xl px-4 py-2 rounded-md '>
+                <div className='text-xl px-4 py-2 rounded-md  md:col-span-1 col-span-2 '>
                   <span>
                     in addition to our product services and delicious meals and
                     drinks we offer quite interesting activities and services
