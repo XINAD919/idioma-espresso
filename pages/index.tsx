@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home|Idioma Espresso</title>
+        <title>Idioma Espresso</title>
         <meta name='description' content='sample page idoma espresso' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
@@ -27,7 +27,7 @@ export default function Home() {
           <section className='' id='about-us'>
             <h2 className='m-4'>About Us</h2>
 
-            <h3 className='mb-2'>Our Story</h3>
+            <h3 className='mb-2 text-center'>Our Story</h3>
             <div className='w-full h-fit border px-2 py-4 rounded-md bg-[#f8f4f1]'>
               <span className='tex'>
                 Our story began on the first day of class when our group was
@@ -41,8 +41,20 @@ export default function Home() {
                 and enjoy a great atmosphere.
               </span>
             </div>
+            <div className=''>
+              <h3 className="text-center">logo and slogan</h3>
+              <div className='flex flex-col justify-center items-center'>
+                <Image
+                  src={"/logo.png"}
+                  alt='logo idioma espresso'
+                  width='200'
+                  height='200'
+                />
+                <p className="text-xl md:text-2xl font-semibold">Where Learning and Fun Brew Together!</p>
+              </div>
+            </div>
           </section>
-          <section className='' id='producs-and-services'>
+          <section className='my-8' id='producs-and-services'>
             <h2 className='mb-4 text-2xl md:text-3xl'>Products and Services</h2>
             <div className=''>
               <h3 className='mb-4 text-center '>Products</h3>
@@ -55,7 +67,7 @@ export default function Home() {
                     height={200}
                   />
                 </div>
-                <div className='md:text-2xl text-xl md:col-span-1 col-span-2'>
+                <div className='md:text-2xl text-xl md:col-span-1 col-span-2  px-4 py-2 rounded-md'>
                   <span>
                     We have a menu not so common in the day, it has exact
                     products from the cafeteria such as coffees, cakes, light
@@ -64,7 +76,7 @@ export default function Home() {
                     like reading, writing etc.
                   </span>
                 </div>
-                <div className='md:text-2xl text-xl'>
+                <div className='md:text-2xl text-xl px-4 py-2 rounded-md '>
                   <span>
                     In the course of the day begins the change of menu where now
                     is no longer a place for all kinds of people, and our menus
@@ -84,10 +96,18 @@ export default function Home() {
             </div>
 
             <div className='mt-4'>
-              <h3 className='text-center'>Services</h3>
+              <h3 className='text-center my-8'>Services</h3>
               <div className=' grid grid-cols-2 gap-4 place-items-center '>
-                <div className=''>aqui una imagen</div>
-                <div className='text-xl py-4'>
+                <div className='flex items-center justify-center'>
+                  <Image
+                    src={"/notice.png"}
+                    alt='notice'
+                    width={1000}
+                    height={1000}
+                    style={{ width: "70%" }}
+                  />
+                </div>
+                <div className='text-xl px-4 py-2 rounded-md '>
                   <span>
                     in addition to our product services and delicious meals and
                     drinks we offer quite interesting activities and services
@@ -107,16 +127,18 @@ export default function Home() {
           </section>
           <section className='' id='locations'>
             <h2 className='mb-4'>Locations</h2>
-            <div className='px-4 py-2'>
-              <span className=''>
-                Our vision is to initially expand Idioma Espresso across the
-                national territory, establishing multiple franchises in various
-                cities. Subsequently, we aspire to take this concept to other
-                countries, with the aim of making a global impact and providing
-                a enriching experience for more language learners, one cup at a
-                time.
-              </span>
-              <div className='mt-12'>
+            <div className=''>
+              <div className='px-4 py-2 rounded-md '>
+                <span className=''>
+                  Our vision is to initially expand Idioma Espresso across the
+                  national territory, establishing multiple franchises in
+                  various cities. Subsequently, we aspire to take this concept
+                  to other countries, with the aim of making a global impact and
+                  providing a enriching experience for more language learners,
+                  one cup at a time.
+                </span>
+              </div>
+              <div className='mt-6'>
                 <iframe
                   width='100%'
                   height='450'
@@ -128,8 +150,43 @@ export default function Home() {
               </div>
             </div>
           </section>
+          <section id='differentiation'>
+            <h2 className='mb-4'>How we&apos;re different</h2>
+            <span>
+              We consider that our main competition could be those ventures that
+              have a very similar idea to ours either in locations,
+              applications, companies, services among others, for us it is
+              essential how customers feel in this space for that reason we
+              decided not only to be a business which focuses on learning
+              languages and cultures, we also want our customers to have fun
+              while learning.
+              <br />
+              <br />
+              We know that for some people it is easier to learn through
+              activities than just theory, in that point we decided to include
+              painting, crochet, dance classes and Karaoke night as main
+              activities so that our clients can enjoy, laugh and have fun while
+              they want to learn a language.
+              <br />
+              <br />
+              On the other hand we wanted to incorporate in our business
+              different sceneries, a white wall for them to leave us a message
+              if they want, candles which they can create themselves to relax
+              with messages in the language they are learning, we also have
+              calligraphy as we believe that it is not only important to learn
+              how to speak it but also how to write it. We would like to show
+              that although sometimes you have the same alphabet some things
+              change and finally, we have the images related to languages and
+              with this we seek to try to show the culture of each country,
+              making a visual impact on our customers. We would like to show
+              that although sometimes you have the same alphabet some things
+              change and finally, we have the images related to languages and
+              with this we seek to try to show the culture of each country,
+              making a visual impact on our customers.
+            </span>
+          </section>
           <section
-            className=' h-full flex flex-col justify-center items-center'
+            className='h-full flex flex-col justify-center items-center mt-8'
             id='videos'
           >
             <h2 className='mb-8'>Videos</h2>
@@ -137,16 +194,7 @@ export default function Home() {
               <iframe
                 width='560'
                 height='315'
-                src='https://www.youtube.com/embed/_LGICP29iHg?si=VjzaFIkQm_UHlPut'
-                title='YouTube video player'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowFullScreen
-              ></iframe>
-
-              <iframe
-                width='560'
-                height='315'
-                src='https://www.youtube.com/embed/R78IADipbZI?si=pyzGm1Pe-K-0dODI'
+                src='https://www.youtube.com/embed/Ui3e7QNEzUw?si=AUF3lwo5xLoyhilt'
                 title='YouTube video player'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowFullScreen
