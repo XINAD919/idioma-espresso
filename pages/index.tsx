@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <PublicLayout>
         <div className='h-full'>
-          <section className='' id='home'>
+          <section className='mt-16 md:m-0' id='home'>
             <div className='w-full'>
               <Image
                 src={"/welcome.png"}
