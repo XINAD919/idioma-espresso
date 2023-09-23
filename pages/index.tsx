@@ -51,7 +51,7 @@ export default function Home() {
                   height='200'
                   className='m-auto'
                 />
-                <p className='text-xl md:text-2xl font-semibold'>
+                <p className='text-xl text-center md:text-2xl font-semibold'>
                   Where Learning and Fun Brew Together!
                 </p>
               </div>
