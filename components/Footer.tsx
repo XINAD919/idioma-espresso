@@ -50,14 +50,16 @@ const Footer = () => {
           <div className=''></div>
         </LinksContainer>
 
-        <div className='w-full md:h-12 h-52 flex flex-col md:grid md:grid-cols-2 md:gap-6 md:md:text-[.694rem] text-[.833rem] md:px-12 md:p-0 md:justify-center md:items-center'>
+        <div className='w-full md:h-12 py-8 px-4 flex flex-col md:grid md:grid-cols-2 md:gap-6 md:md:text-[.694rem] text-[.833rem] md:px-12 md:p-0 md:justify-center md:items-center'>
           <div className='relative'>
-            <div className='absolute'></div>
-            <div className='w-full md:flex md:gap-4 mb-8 md:m-0 '>
-              <p className='cursor-pointer py-2 md:p-0'>
+            <div className='absolute'>
+              
+            </div>
+            <div className='w-full md:flex md:gap-4 mb-4 md:m-0 '>
+              <p className='cursor-pointer py-1 md:p-0'>
                 Términos y condiciones
               </p>
-              <p className='cursor-pointer py-2 md:p-0'>
+              <p className='cursor-pointer py-1 md:p-0'>
                 politicas de privacidad
               </p>
             </div>
